@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/master.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <main class="jumbotron text-center">
+      <a id="send" href="#me">SOBRE</a>
+      <h1>ROCK</h1>
+      <div class="desc1">
+        <section>
+        <p>O rock 'n' roll é um gênero musical que teve origem nos Estados Unidos (EUA) a partir dos anos 1950, popularizando-se por todo o mundo. Mais do que um estilo musical com ritmo contagiante, é conhecido por ter um apelo comportamental e visual cheio de irreverência e atitude.</p>
+        <p class="black" >QUEEN</p>
+        <img class="img" src="https://studiosol-a.akamaihd.net/tb/letras-blog/wp-content/uploads/2020/04/a11f11e-Queen-1024x810.jpg" alt="queen">
+        </section>
+      </div>
+      <h1>HIP HOP</h1>
+      <div class="desc2">
+        <section>
+        <p>O hip hop é mundialmente conhecido pela sua sonoridade forte e intensa, porém, se engana quem pensa que suas características param por aí. Como um dos gêneros mais populares que existem, o hip hop se tornou “mainstream”, principalmente nos últimos anos, com o aparecimento de nomes com enorme apelo popular, como Eminem, Drake, Post Malone e Jay Z.</p>
+        <p class="black" >DR. DRE</p>
+        <img class="img" src="https://musica.culturamix.com/blog/wp-content/gallery/dr-dre/dr-dre-2.jpg" alt="queen">
+        </section>
+      </div>
+
+        <form class="jumbotron text-center" method="post">
+          <h1>Cadastro</h1>
+          <div class="cadastro">
+            <div class="cainputs">
+              <p>Nome</p>
+              <input id="nome" type="text" placeholder=" Digite seu nome" required data-tipo="nome">
+
+              <p>Estilo Musical</p>
+              <select id="music" name="music" required>
+                  <option value="Rockeiro(a)">Rock</option>
+                  <option value="Popeiro(a)">Pop</option>
+                  <option value="Rapper">Rap</option>
+                  <option value="Fenkeiro(a)">Funk</option>
+                  <option value="Sertanejo(a)">Sertanejo</option>
+              </select>
+              <a><button onclick="myFunction()" type="submit" name="button">Enviar</button></a>
+            </div>
+          </div>
+        </form>
+
+        <footer id="rodape">Meu nome é Isaac sou estudante de Ciência da Computação
+          <img id="me" src="https://i.guim.co.uk/img/media/ed329aed0d16aa349ad6cb75dcb260c2bf6618ef/63_265_1985_1190/master/1985.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=4f852230dad177f93b00b3fcf31ba116" alt="">
+          <p id="nasc">aa</p>
+        </footer>
+      </main>
+      <script>
+      function myFunction() {
+        var as = document.forms[0].music.value;
+        var nome = document.getElementById("nome").value;
+        alert("Bem vindo(a)! " + as + " " + nome);
+      }
+
+        var dob = new Date("10/29/2001");
+
+        var month_diff = Date.now() - dob.getTime();
+
+        var age_dt = new Date(month_diff);
+
+        var year = age_dt.getUTCFullYear();
+
+        var age = Math.abs(year - 1970);
+
+        document.getElementById("nasc").innerHTML = "MINHA IDADE: " + age + " ANOS";
+
+  </script>
+  </body>
+</html>

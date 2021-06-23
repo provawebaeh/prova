@@ -1,0 +1,127 @@
+body{
+  font-family: "Poppins", sans-serif;
+  background: #0C2D48;
+  width: 100%;
+  margin: 0;
+  padding: 40px;
+}
+
+.all{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  color: white;
+}
+
+.desc1{
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.desc2{
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+img{
+  width: 40%;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+
+}
+
+p{
+  display: flex;
+  align-items: center
+}
+
+
+.black{
+  font-weight: bolder;
+}
+
+a{
+  text-decoration: none;
+}
+
+.cadastro{
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  width: 1000px;
+}
+
+h1{
+  color: white;
+}
+
+.cainputs input, select{
+  outline: none;
+  color: gray;
+  border-radius: 10px;
+  border: 1px solid #D8DBE2;
+  width: 100%;
+  /* padding: 10px 10px; */
+  height: 3rem;
+}
+
+.cainputs select{
+  width: 100%;
+  color: black;
+  background-color: #dcdcdc;
+  padding: 7px;
+}
+
+.cainputs .comentario{
+  text-align:justify;
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+  outline: none;
+}
+
+.cainputs input:focus{
+  border: 1px solid #18A1C2;
+
+}
+
+button{
+  border-radius: 5px;
+  background: #0C2D48;
+  color: white;
+  width: 110px;
+  margin-top: 10px;
+  padding: 2%;
+  border: none;
+}
+
+#rodape{
+  margin: 10px;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  /* color: white; */
+  font-size: 15px;
+}
+#send {
+  font-size: 40px;
+  color: #white;
+  text-decoration: none;
+}
+ #me{
+   width: 100px;
+ }
